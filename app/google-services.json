@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040174119567",
+    "firebase_url": "https://alphahadarm.firebaseio.com",
+    "project_id": "alphahadarm",
+    "storage_bucket": "alphahadarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040174119567:android:81b1882a04d1ecb39e8efa",
+        "android_client_info": {
+          "package_name": "com.example.alpha1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040174119567-2q4j4bfr5n5o2akilovkge1ca3m5tl8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alpha1",
+            "certificate_hash": "0fba4298b46d8c2e7afaf38f4e030415098c1acf"
+          }
+        },
+        {
+          "client_id": "1040174119567-del3e1r0shcva7j2ek6pa21ao1e28aj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJL3OOcXzTXdWNN87r7TKGNNwMw3Wfvw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040174119567-del3e1r0shcva7j2ek6pa21ao1e28aj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

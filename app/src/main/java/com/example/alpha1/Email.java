@@ -10,9 +10,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * The type Email.
+ */
 public class Email extends AppCompatActivity {
 
-    EditText et1,et2;
+    /**
+     * The Et 1.
+     */
+    EditText et1, /**
+     * The Et 2.
+     */
+    et2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +32,9 @@ public class Email extends AppCompatActivity {
         et2=(EditText) findViewById(R.id.et2);
     }
 
+    /**
+     * Send email.
+     */
     protected void sendEmail() {
 
         String Email = et1.getText().toString();
@@ -49,6 +61,12 @@ public class Email extends AppCompatActivity {
                     "There is no email client installed.", Toast.LENGTH_SHORT).show();
         }
     }
+
+    /**
+     * Emailb.
+     *
+     * @param view the view
+     */
     public void Emailb(View view) {
 
         sendEmail();

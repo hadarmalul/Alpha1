@@ -26,10 +26,22 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.File;
 
+/**
+ * The type Storage.
+ */
 public class Storage extends AppCompatActivity {
 
+    /**
+     * The Iv.
+     */
     ImageView iv;
+    /**
+     * The Mstorage ref.
+     */
     StorageReference mstorageRef;
+    /**
+     * The Imguri.
+     */
     public Uri imguri;
 
     @Override
@@ -50,6 +62,11 @@ public class Storage extends AppCompatActivity {
     }
 
 
+    /**
+     * Fileuploader.
+     *
+     * @param view the view
+     */
     public void fileuploader(View view) {
 
         StorageReference Ref=mstorageRef.child(System.currentTimeMillis()+"."+getExtension(imguri));
@@ -81,6 +98,11 @@ public class Storage extends AppCompatActivity {
     }
 
 
+    /**
+     * Filechooser.
+     *
+     * @param view the view
+     */
     public void filechooser(View view) {
 
         Intent si=new Intent();

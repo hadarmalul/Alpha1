@@ -15,10 +15,19 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+/**
+ * The type Authentication.
+ */
 public class Authentication extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    EditText N,P;
+    /**
+     * The N.
+     */
+    EditText N, /**
+     * The P.
+     */
+    P;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +43,9 @@ public class Authentication extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
+        /**
+         *  Check if user is signed in (non-null) and update UI accordingly.
+         */
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
     }
@@ -44,6 +55,11 @@ public class Authentication extends AppCompatActivity {
     }
 
 
+    /**
+     * Btn.
+     *
+     * @param view the view
+     */
     public void btn(View view) {
 
         String email=N.getText().toString();
@@ -53,12 +69,16 @@ public class Authentication extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    // Sign in success, update UI with the signed-in user's information
+                    /**
+                     * Sign in success, update UI with the signed-in user's information
+                     */
                     FirebaseUser user = mAuth.getCurrentUser();
                     updateUI(user);
                 } else {
                     Log.e("Authentication", String.valueOf(task.getException()));
-                    // If sign in fails, display a message to the user.
+                    /**
+                     *  If sign in fails, display a message to the user.
+                     */
                     Toast.makeText(Authentication.this, "Authentication failed.",
                             Toast.LENGTH_SHORT).show();
                     updateUI(null);

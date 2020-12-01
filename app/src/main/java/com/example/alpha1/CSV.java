@@ -13,6 +13,9 @@ import android.widget.EditText;
 import java.io.File;
 import java.io.FileOutputStream;
 
+/**
+ * The type Csv.
+ */
 public class CSV extends AppCompatActivity {
 
 
@@ -24,6 +27,11 @@ public class CSV extends AppCompatActivity {
 
     }
 
+    /**
+     * Csvf.
+     *
+     * @param view the view
+     */
     public void csvf(View view) {
 
         StringBuilder data = new StringBuilder();
